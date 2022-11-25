@@ -45,11 +45,11 @@
     </main>
     <script>
         const
-        btn = document.getElementById('num-btn'),
-        min = document.getElementById('num-min'),
-        max = document.getElementById('num-max')
+        btn = document.querySelector('#num-btn'),
+        min = document.querySelector('#num-min'),
+        max = document.querySelector('#num-max')
         getRandomBetween = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
-        btn.onclick = () => document.getElementById('num-result').innerHTML = `Ваше число: ${getRandomBetween(Number(min.value), (max.value))}`
+        btn.onclick = () => document.querySelector('#num-result').innerHTML = `Ваше число: ${getRandomBetween(min.value, (max.value))}`
     </script>
 </body>
 </html>
