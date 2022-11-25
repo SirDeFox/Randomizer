@@ -41,14 +41,15 @@
         <span id="num-result"></span>
     </main>
     <script>
-        let btn = document.getElementById('num-btn')
-        let min = document.getElementById('num-min')
-        let max = document.getElementById('num-max')
+        const
+        btn = document.getElementById('num-btn'),
+        min = document.getElementById('num-min'),
+        max = document.getElementById('num-max')
         getRandomBetween = (min, max) => {
             return Math.floor(Math.random() * (max - min + 1) + min)
         }
         btn.onclick = () => {
-            document.getElementById('num-result').innerHTML = `Ваше число: ${getRandomBetween(Number(min.value), Number(max.value))}`
+            document.getElementById('num-result').innerHTML = `Ваше число: ${getRandomBetween(Number(min.value), (max.value))}`
         }
     </script>
 </body>
