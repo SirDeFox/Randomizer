@@ -48,12 +48,8 @@
         btn = document.getElementById('num-btn'),
         min = document.getElementById('num-min'),
         max = document.getElementById('num-max')
-        getRandomBetween = (min, max) => {
-            return Math.floor(Math.random() * (max - min + 1) + min)
-        }
-        btn.onclick = () => {
-            document.getElementById('num-result').innerHTML = `Ваше число: ${getRandomBetween(Number(min.value), (max.value))}`
-        }
+        getRandomBetween = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+        btn.onclick = () => document.getElementById('num-result').innerHTML = `Ваше число: ${getRandomBetween(Number(min.value), (max.value))}`
     </script>
 </body>
 </html>
